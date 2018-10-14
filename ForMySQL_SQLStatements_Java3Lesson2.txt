@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS `user` (
+  `id_user` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(50) NOT NULL,
+  `user_login` varchar(50) NOT NULL,
+  `user_password` varchar(60) NOT NULL,
+  `user_last_action` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_user`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+INSERT INTO `user` (`user_name`, `user_login`, `user_password`, `user_last_action`) VALUES
+('Alex', 'alex', '827ccb0eea8a706c4c34a16891f84e7b', '2018-10-12 17:54:20'),
+('Bob', 'bob', '12345', '2018-10-12 17:54:20'),  
+('Nikolay', 'nick3', '67890', '2018-10-12 17:54:20') 
+
+
+--    C:>set classpath=C:\Program Files (x86)\Java\jre1.8.0_141\lib\ext\mysql-connector-java-5.0.8-bin.jar;.;  
